@@ -1,7 +1,7 @@
 Git 学习
 ============
 
-##### **`git remote -v`** 获取版本库地址信息
+### **`git remote -v`** 获取版本库地址信息
 
 代表的是源, 提交与拉取都是从这个地址
 
@@ -15,7 +15,7 @@ Git 学习
     origin https://github.com/sursir/Note.git (push)
     ...
 ```
-##### **`git remote rm origin` | `git remote add origin GIT_ADDR`** 修改源
+### **`git remote rm origin` | `git remote add origin GIT_ADDR`** 修改源
 
 先删除, 然后添加新源
 
@@ -26,7 +26,7 @@ Git 学习
     // 添加 `以SSH方式提交的` 源
 ```
 
-##### **`git push origin master`** 提交, [指定*源*与*分支*]
+### **`git push origin master`** 提交, [指定*源*与*分支*]
 
 指定新的源之后需要重新建立一个上传流 **`--set-upstream`**才可再次进行 `push/pull`
 
