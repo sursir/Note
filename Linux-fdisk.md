@@ -10,14 +10,14 @@ e.g. `mount /dev/sdb1`
 e.g. `umount /dev/sdb1`
 
 - ##### `df -h`
-    `df -h` // 使用此命令可以查看到已可用的文件系统使用情况 (已分区, 已格式化)
+    在 `man` 中， 此命令的`NAME`为 **`df - report file system disk space usage`**
 
-在 `man` 中， 此命令的`NAME`为 **`df - report file system disk space usage`**
+        df -h // 使用此命令可以查看到已可用的文件系统使用情况 (已分区, 已格式化)
 
 - ##### `fdisk`    manipulate disk partition table
-    fdisk -l // 查看所有的磁盘分区表
-    fdisk -m // 列出所有命令项
-    fdisk -n // 更新一个硬盘的分区表
+        fdisk -l // 查看所有的磁盘分区表
+        fdisk -m // 列出所有命令项
+        fdisk -n // 更新一个硬盘的分区表
 
 - ##### `mkfs` 格式化磁盘
 `mkfs.ext4 /dev/sdb` or `mkfs -t ext4 /dev/sdb`
