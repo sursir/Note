@@ -3,23 +3,23 @@ Linux下 新增硬盘 && 挂载分区
 
 ### 所用到的命令
 
-##### `mount DEVICE-BOOT` 挂载一个磁盘[文件系统 | file system]
+- ##### `mount DEVICE-BOOT` 挂载一个磁盘[文件系统 | file system]
 e.g. `mount /dev/sdb1`
 
-##### `umount DEVICE-BOOT` [扩展] 取消挂载一个磁盘[文件系统 | file system]
+- ##### `umount DEVICE-BOOT` [扩展] 取消挂载一个磁盘[文件系统 | file system]
 e.g. `umount /dev/sdb1`
 
-##### `df -h`
+- ##### `df -h`
     `df -h` // 使用此命令可以查看到已可用的文件系统使用情况 (已分区, 已格式化)
 
 在 `man` 中， 此命令的`NAME`为 **`df - report file system disk space usage`**
 
-##### `fdisk`    manipulate disk partition table
+- ##### `fdisk`    manipulate disk partition table
     fdisk -l // 查看所有的磁盘分区表
     fdisk -m // 列出所有命令项
     fdisk -n // 更新一个硬盘的分区表
 
-##### `mkfs` 格式化磁盘
+- ##### `mkfs` 格式化磁盘
 `mkfs.ext4 /dev/sdb` or `mkfs -t ext4 /dev/sdb`
 
 ### 名词解释
